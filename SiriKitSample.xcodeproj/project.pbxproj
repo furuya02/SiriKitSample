@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D738423F1D82429F0042239E /* takoyaki_message.png in Resources */ = {isa = PBXBuildFile; fileRef = D738423E1D82429F0042239E /* takoyaki_message.png */; };
+		D7DD83471D822C1E00BBC4BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD83461D822C1E00BBC4BF /* AppDelegate.swift */; };
+		D7DD83491D822C1E00BBC4BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD83481D822C1E00BBC4BF /* ViewController.swift */; };
+		D7DD834C1D822C1E00BBC4BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DD834A1D822C1E00BBC4BF /* Main.storyboard */; };
+		D7DD834E1D822C1E00BBC4BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7DD834D1D822C1E00BBC4BF /* Assets.xcassets */; };
+		D7DD83511D822C1E00BBC4BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DD834F1D822C1E00BBC4BF /* LaunchScreen.storyboard */; };
+		D7DD835F1D822CA800BBC4BF /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD835E1D822CA800BBC4BF /* IntentHandler.swift */; };
+		D7DD83681D822CA800BBC4BF /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7DD83671D822CA800BBC4BF /* IntentsUI.framework */; };
+		D7DD836B1D822CA800BBC4BF /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DD836A1D822CA800BBC4BF /* IntentViewController.swift */; };
+		D7DD836E1D822CA800BBC4BF /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DD836C1D822CA800BBC4BF /* MainInterface.storyboard */; };
+		D7DD83721D822CA800BBC4BF /* ExtensionSampleUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D7DD83651D822CA800BBC4BF /* ExtensionSampleUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D7DD83751D822CA800BBC4BF /* ExtensionSample.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D7DD835C1D822CA700BBC4BF /* ExtensionSample.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D7DD837E1D82373B00BBC4BF /* takoyaki.png in Resources */ = {isa = PBXBuildFile; fileRef = D7DD837D1D82373B00BBC4BF /* takoyaki.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7DD83701D822CA800BBC4BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7DD833B1D822C1E00BBC4BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7DD83641D822CA800BBC4BF;
+			remoteInfo = ExtensionSampleUI;
+		};
+		D7DD83731D822CA800BBC4BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7DD833B1D822C1E00BBC4BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7DD835B1D822CA700BBC4BF;
+			remoteInfo = ExtensionSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D7DD837C1D822CA800BBC4BF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D7DD83751D822CA800BBC4BF /* ExtensionSample.appex in Embed App Extensions */,
+				D7DD83721D822CA800BBC4BF /* ExtensionSampleUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D738423E1D82429F0042239E /* takoyaki_message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = takoyaki_message.png; sourceTree = "<group>"; };
+		D73842401D8246240042239E /* SiriKitSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SiriKitSample.entitlements; sourceTree = "<group>"; };
+		D7DD83431D822C1E00BBC4BF /* SiriKitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiriKitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7DD83461D822C1E00BBC4BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D7DD83481D822C1E00BBC4BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D7DD834B1D822C1E00BBC4BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D7DD834D1D822C1E00BBC4BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7DD83501D822C1E00BBC4BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D7DD83521D822C1E00BBC4BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7DD835C1D822CA700BBC4BF /* ExtensionSample.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ExtensionSample.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7DD835E1D822CA800BBC4BF /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		D7DD83601D822CA800BBC4BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7DD83651D822CA800BBC4BF /* ExtensionSampleUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ExtensionSampleUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7DD83671D822CA800BBC4BF /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		D7DD836A1D822CA800BBC4BF /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		D7DD836D1D822CA800BBC4BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		D7DD836F1D822CA800BBC4BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7DD837D1D82373B00BBC4BF /* takoyaki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = takoyaki.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7DD83401D822C1E00BBC4BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7DD83591D822CA700BBC4BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7DD83621D822CA800BBC4BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7DD83681D822CA800BBC4BF /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D7DD833A1D822C1E00BBC4BF = {
+			isa = PBXGroup;
+			children = (
+				D7DD83451D822C1E00BBC4BF /* SiriKitSample */,
+				D7DD835D1D822CA700BBC4BF /* ExtensionSample */,
+				D7DD83691D822CA800BBC4BF /* ExtensionSampleUI */,
+				D7DD83661D822CA800BBC4BF /* Frameworks */,
+				D7DD83441D822C1E00BBC4BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7DD83441D822C1E00BBC4BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7DD83431D822C1E00BBC4BF /* SiriKitSample.app */,
+				D7DD835C1D822CA700BBC4BF /* ExtensionSample.appex */,
+				D7DD83651D822CA800BBC4BF /* ExtensionSampleUI.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7DD83451D822C1E00BBC4BF /* SiriKitSample */ = {
+			isa = PBXGroup;
+			children = (
+				D73842401D8246240042239E /* SiriKitSample.entitlements */,
+				D7DD83461D822C1E00BBC4BF /* AppDelegate.swift */,
+				D7DD83481D822C1E00BBC4BF /* ViewController.swift */,
+				D7DD834A1D822C1E00BBC4BF /* Main.storyboard */,
+				D7DD834D1D822C1E00BBC4BF /* Assets.xcassets */,
+				D7DD834F1D822C1E00BBC4BF /* LaunchScreen.storyboard */,
+				D7DD83521D822C1E00BBC4BF /* Info.plist */,
+			);
+			path = SiriKitSample;
+			sourceTree = "<group>";
+		};
+		D7DD835D1D822CA700BBC4BF /* ExtensionSample */ = {
+			isa = PBXGroup;
+			children = (
+				D7DD835E1D822CA800BBC4BF /* IntentHandler.swift */,
+				D7DD83601D822CA800BBC4BF /* Info.plist */,
+			);
+			path = ExtensionSample;
+			sourceTree = "<group>";
+		};
+		D7DD83661D822CA800BBC4BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7DD83671D822CA800BBC4BF /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7DD83691D822CA800BBC4BF /* ExtensionSampleUI */ = {
+			isa = PBXGroup;
+			children = (
+				D7DD837D1D82373B00BBC4BF /* takoyaki.png */,
+				D738423E1D82429F0042239E /* takoyaki_message.png */,
+				D7DD836A1D822CA800BBC4BF /* IntentViewController.swift */,
+				D7DD836C1D822CA800BBC4BF /* MainInterface.storyboard */,
+				D7DD836F1D822CA800BBC4BF /* Info.plist */,
+			);
+			path = ExtensionSampleUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7DD83421D822C1E00BBC4BF /* SiriKitSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7DD83551D822C1E00BBC4BF /* Build configuration list for PBXNativeTarget "SiriKitSample" */;
+			buildPhases = (
+				D7DD833F1D822C1E00BBC4BF /* Sources */,
+				D7DD83401D822C1E00BBC4BF /* Frameworks */,
+				D7DD83411D822C1E00BBC4BF /* Resources */,
+				D7DD837C1D822CA800BBC4BF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7DD83711D822CA800BBC4BF /* PBXTargetDependency */,
+				D7DD83741D822CA800BBC4BF /* PBXTargetDependency */,
+			);
+			name = SiriKitSample;
+			productName = SiriKitSample;
+			productReference = D7DD83431D822C1E00BBC4BF /* SiriKitSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D7DD835B1D822CA700BBC4BF /* ExtensionSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7DD83791D822CA800BBC4BF /* Build configuration list for PBXNativeTarget "ExtensionSample" */;
+			buildPhases = (
+				D7DD83581D822CA700BBC4BF /* Sources */,
+				D7DD83591D822CA700BBC4BF /* Frameworks */,
+				D7DD835A1D822CA700BBC4BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExtensionSample;
+			productName = ExtensionSample;
+			productReference = D7DD835C1D822CA700BBC4BF /* ExtensionSample.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D7DD83641D822CA800BBC4BF /* ExtensionSampleUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7DD83761D822CA800BBC4BF /* Build configuration list for PBXNativeTarget "ExtensionSampleUI" */;
+			buildPhases = (
+				D7DD83611D822CA800BBC4BF /* Sources */,
+				D7DD83621D822CA800BBC4BF /* Frameworks */,
+				D7DD83631D822CA800BBC4BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExtensionSampleUI;
+			productName = ExtensionSampleUI;
+			productReference = D7DD83651D822CA800BBC4BF /* ExtensionSampleUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7DD833B1D822C1E00BBC4BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = SAPPOROWORKS;
+				TargetAttributes = {
+					D7DD83421D822C1E00BBC4BF = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = T32GQ84AVX;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					D7DD835B1D822CA700BBC4BF = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = T32GQ84AVX;
+						ProvisioningStyle = Automatic;
+					};
+					D7DD83641D822CA800BBC4BF = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = T32GQ84AVX;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D7DD833E1D822C1E00BBC4BF /* Build configuration list for PBXProject "SiriKitSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7DD833A1D822C1E00BBC4BF;
+			productRefGroup = D7DD83441D822C1E00BBC4BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7DD83421D822C1E00BBC4BF /* SiriKitSample */,
+				D7DD835B1D822CA700BBC4BF /* ExtensionSample */,
+				D7DD83641D822CA800BBC4BF /* ExtensionSampleUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7DD83411D822C1E00BBC4BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7DD83511D822C1E00BBC4BF /* LaunchScreen.storyboard in Resources */,
+				D7DD834E1D822C1E00BBC4BF /* Assets.xcassets in Resources */,
+				D7DD834C1D822C1E00BBC4BF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7DD835A1D822CA700BBC4BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7DD83631D822CA800BBC4BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7DD837E1D82373B00BBC4BF /* takoyaki.png in Resources */,
+				D7DD836E1D822CA800BBC4BF /* MainInterface.storyboard in Resources */,
+				D738423F1D82429F0042239E /* takoyaki_message.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7DD833F1D822C1E00BBC4BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7DD83491D822C1E00BBC4BF /* ViewController.swift in Sources */,
+				D7DD83471D822C1E00BBC4BF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7DD83581D822CA700BBC4BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7DD835F1D822CA800BBC4BF /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7DD83611D822CA800BBC4BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7DD836B1D822CA800BBC4BF /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7DD83711D822CA800BBC4BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7DD83641D822CA800BBC4BF /* ExtensionSampleUI */;
+			targetProxy = D7DD83701D822CA800BBC4BF /* PBXContainerItemProxy */;
+		};
+		D7DD83741D822CA800BBC4BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7DD835B1D822CA700BBC4BF /* ExtensionSample */;
+			targetProxy = D7DD83731D822CA800BBC4BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D7DD834A1D822C1E00BBC4BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7DD834B1D822C1E00BBC4BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D7DD834F1D822C1E00BBC4BF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7DD83501D822C1E00BBC4BF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D7DD836C1D822CA800BBC4BF /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7DD836D1D822CA800BBC4BF /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7DD83531D822C1E00BBC4BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D7DD83541D822C1E00BBC4BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7DD83561D822C1E00BBC4BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SiriKitSample/SiriKitSample.entitlements;
+				DEVELOPMENT_TEAM = T32GQ84AVX;
+				INFOPLIST_FILE = SiriKitSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ne.sapporoworks.SiriKitSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D7DD83571D822C1E00BBC4BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SiriKitSample/SiriKitSample.entitlements;
+				DEVELOPMENT_TEAM = T32GQ84AVX;
+				INFOPLIST_FILE = SiriKitSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ne.sapporoworks.SiriKitSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D7DD83771D822CA800BBC4BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = T32GQ84AVX;
+				INFOPLIST_FILE = ExtensionSampleUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ne.sapporoworks.SiriKitSample.ExtensionSampleUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D7DD83781D822CA800BBC4BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = T32GQ84AVX;
+				INFOPLIST_FILE = ExtensionSampleUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ne.sapporoworks.SiriKitSample.ExtensionSampleUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D7DD837A1D822CA800BBC4BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = T32GQ84AVX;
+				INFOPLIST_FILE = ExtensionSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ne.sapporoworks.SiriKitSample.ExtensionSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D7DD837B1D822CA800BBC4BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = T32GQ84AVX;
+				INFOPLIST_FILE = ExtensionSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ne.sapporoworks.SiriKitSample.ExtensionSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7DD833E1D822C1E00BBC4BF /* Build configuration list for PBXProject "SiriKitSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7DD83531D822C1E00BBC4BF /* Debug */,
+				D7DD83541D822C1E00BBC4BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7DD83551D822C1E00BBC4BF /* Build configuration list for PBXNativeTarget "SiriKitSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7DD83561D822C1E00BBC4BF /* Debug */,
+				D7DD83571D822C1E00BBC4BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7DD83761D822CA800BBC4BF /* Build configuration list for PBXNativeTarget "ExtensionSampleUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7DD83771D822CA800BBC4BF /* Debug */,
+				D7DD83781D822CA800BBC4BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7DD83791D822CA800BBC4BF /* Build configuration list for PBXNativeTarget "ExtensionSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7DD837A1D822CA800BBC4BF /* Debug */,
+				D7DD837B1D822CA800BBC4BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7DD833B1D822C1E00BBC4BF /* Project object */;
+}
